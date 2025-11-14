@@ -112,12 +112,35 @@ body[data-lang="en"] {
 /* RTL Support */
 body[data-lang="ar"] {
     direction: rtl;
-    text-align: right;
 }
 
 body[data-lang="en"] {
     direction: ltr;
+}
+
+/* Text Alignment - Natural Flow */
+body[data-lang="ar"] .hero-content,
+body[data-lang="ar"] .section-header,
+body[data-lang="ar"] .footer-brand,
+body[data-lang="ar"] .footer-tagline {
+    text-align: right;
+}
+
+body[data-lang="en"] .hero-content,
+body[data-lang="en"] .section-header,
+body[data-lang="en"] .footer-brand,
+body[data-lang="en"] .footer-tagline {
     text-align: left;
+}
+
+/* Always center these */
+.section-header,
+.cta-section,
+.testimonial-card,
+.pricing-card,
+.feature-card,
+.pain-card {
+    text-align: center;
 }
 
 /* ===================================
@@ -205,6 +228,22 @@ p {
 .nav-link:focus {
     color: var(--color-primary);
     background: rgba(45, 106, 79, 0.08);
+}
+
+/* Navbar Navigation Items - RTL/LTR Alignment */
+.navbar-nav {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+body[data-lang="ar"] .navbar-nav {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+body[data-lang="en"] .navbar-nav {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 /* Theme Toggle */
@@ -366,9 +405,18 @@ p {
     margin-top: 2rem;
 }
 
+body[data-lang="ar"] .hero-stats {
+    justify-content: flex-start;
+}
+
+body[data-lang="en"] .hero-stats {
+    justify-content: flex-start;
+}
+
 .stat-item {
     text-align: center;
     min-width: 120px;
+    flex: 0 0 auto;
 }
 
 .stat-number {
@@ -624,6 +672,16 @@ section {
     align-items: flex-start;
     opacity: 0;
     animation: fadeIn 0.6s ease-out forwards;
+}
+
+body[data-lang="ar"] .feature-item {
+    flex-direction: row;
+    text-align: right;
+}
+
+body[data-lang="en"] .feature-item {
+    flex-direction: row;
+    text-align: left;
 }
 
 .feature-item:nth-child(1) { animation-delay: 0.1s; }
@@ -928,6 +986,14 @@ body[data-lang="en"] .price-currency {
     color: var(--color-text);
 }
 
+body[data-lang="ar"] .comparison-feature {
+    text-align: right;
+}
+
+body[data-lang="en"] .comparison-feature {
+    text-align: left;
+}
+
 .comparison-us {
     text-align: center;
     color: var(--color-primary);
@@ -1004,11 +1070,17 @@ body[data-lang="en"] .price-currency {
 }
 
 .store-text {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 body[data-lang="ar"] .store-text {
-    text-align: right;
+    align-items: flex-end;
+}
+
+body[data-lang="en"] .store-text {
+    align-items: flex-start;
 }
 
 .store-label {
@@ -1175,9 +1247,23 @@ body[data-lang="ar"] .store-text {
         font-size: 1.75rem;
     }
 
+    /* Mobile Hero Alignment */
+    .hero-content {
+        text-align: center;
+    }
+
+    body[data-lang="ar"] .hero-content {
+        text-align: center;
+    }
+
+    body[data-lang="en"] .hero-content {
+        text-align: center;
+    }
+
     .hero-cta {
         flex-direction: column;
         width: 100%;
+        align-items: stretch;
     }
 
     .btn {
@@ -1185,7 +1271,12 @@ body[data-lang="ar"] .store-text {
     }
 
     .hero-stats {
-        justify-content: space-around;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .stat-item {
+        min-width: 100px;
     }
 
     .stat-number {
@@ -1199,6 +1290,7 @@ body[data-lang="ar"] .store-text {
 
     .cta-buttons {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .store-button {
@@ -1218,20 +1310,47 @@ body[data-lang="ar"] .store-text {
     .pricing-card {
         margin-bottom: 2rem;
     }
+
+    /* Mobile Cards Alignment */
+    .pain-card,
+    .feature-card,
+    .testimonial-card {
+        text-align: center;
+    }
+
+    .feature-item {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body[data-lang="ar"] .feature-item,
+    body[data-lang="en"] .feature-item {
+        text-align: center;
+    }
 }
 
 @media (max-width: 575px) {
     .navbar-nav {
         padding: 1rem 0;
+        width: 100%;
     }
 
     .nav-item {
         margin: 0.25rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        text-align: center;
     }
 
     .theme-toggle,
     .lang-toggle {
-        margin: 0.5rem 0;
+        margin: 0.5rem auto;
+        display: block;
     }
 
     .plant-visual {
@@ -1245,6 +1364,26 @@ body[data-lang="ar"] .store-text {
 
     .plant-emoji {
         font-size: 5rem;
+    }
+
+    /* Small Mobile Grid Alignment */
+    .row.g-4 {
+        row-gap: 1.5rem;
+    }
+
+    .section-header {
+        padding: 0 1rem;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .stat-item {
+        flex: 1 1 30%;
+        min-width: 80px;
     }
 }
 
@@ -1372,11 +1511,27 @@ body[data-lang="ar"] .store-text {
    Utility Classes
    =================================== */
 .text-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .text-muted {
     color: var(--color-text-muted);
+}
+
+body[data-lang="ar"] .text-start {
+    text-align: right !important;
+}
+
+body[data-lang="en"] .text-start {
+    text-align: left !important;
+}
+
+body[data-lang="ar"] .text-end {
+    text-align: left !important;
+}
+
+body[data-lang="en"] .text-end {
+    text-align: right !important;
 }
 
 .mt-1 { margin-top: 0.5rem; }
@@ -1399,4 +1554,20 @@ body[data-lang="ar"] .store-text {
 
 .justify-content-center {
     justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-2 {
+    gap: 1rem;
+}
+
+.gap-3 {
+    gap: 1.5rem;
+}
+
+.gap-4 {
+    gap: 2rem;
 }
