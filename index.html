@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>زراعة من القلب | Farming from the Heart</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode" data-lang="ar">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-ar="زراعة" data-en="Zara'a">
+                <span class="brand-text">زراعة</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features" data-ar="المميزات" data-en="Features">المميزات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#problem" data-ar="المشكلة" data-en="The Problem">المشكلة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#solution" data-ar="الحل" data-en="Solution">الحل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing" data-ar="الأسعار" data-en="Pricing">الأسعار</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                            <span class="sun-icon">☀️</span>
+                            <span class="moon-icon">🌙</span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="lang-toggle" id="langToggle">
+                            <span data-ar="EN" data-en="عربي">EN</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="hero-title" data-ar="زراعة من القلب" data-en="Farming from the Heart">
+                            زراعة من القلب
+                        </h1>
+                        <p class="hero-subtitle" data-ar="أول تطبيق زراعي يفهم لغتك ومناخك" data-en="The first agricultural app that understands your language and climate">
+                            أول تطبيق زراعي يفهم لغتك ومناخك
+                        </p>
+                        <p class="hero-description" data-ar="مصمم خصيصاً لحرارة الخليج وتربة مصر. نجاح مضمون من أول نبتة." data-en="Designed specifically for Gulf heat and Egyptian soil. Guaranteed success from your first plant.">
+                            مصمم خصيصاً لحرارة الخليج وتربة مصر. نجاح مضمون من أول نبتة.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#download" class="btn btn-primary btn-lg" data-ar="ابدأ مجاناً" data-en="Start Free">
+                                ابدأ مجاناً
+                            </a>
+                            <a href="#learn-more" class="btn btn-outline btn-lg" data-ar="اعرف المزيد" data-en="Learn More">
+                                اعرف المزيد
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">140M+</div>
+                                <div class="stat-label" data-ar="مزارع محتمل" data-en="Potential Farmers">مزارع محتمل</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">96%</div>
+                                <div class="stat-label" data-ar="استخدام الهواتف الذكية" data-en="Smartphone Usage">استخدام الهواتف</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label" data-ar="عربي أصيل" data-en="Authentic Arabic">عربي أصيل</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual" data-aos="fade-left">
+                        <div class="plant-visual">
+                            <div class="plant-circle circle-1"></div>
+                            <div class="plant-circle circle-2"></div>
+                            <div class="plant-circle circle-3"></div>
+                            <div class="plant-emoji">🌱</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="لماذا مات نباتي؟" data-en="Why Did My Plant Die?">
+                    لماذا مات نباتي؟
+                </h2>
+                <p class="section-subtitle" data-ar="سؤال يطرحه 455 ألف مزارع عربي يومياً... ولا أحد يجيب بالعربية" data-en="A question asked by 455,000 Arab farmers daily... and no one answers in Arabic">
+                    سؤال يطرحه 455 ألف مزارع عربي يومياً... ولا أحد يجيب بالعربية
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pain-card">
+                        <div class="pain-icon">🌍</div>
+                        <h3 class="pain-title" data-ar="فجوة لغوية" data-en="Language Gap">فجوة لغوية</h3>
+                        <p class="pain-text" data-ar="9 من 10 تطبيقات زراعية لا تدعم العربية. المزارع العربي يشعر أن المنتج 'ليس له'" data-en="9 out of 10 agricultural apps don't support Arabic. Arab farmers feel the product 'isn't for them'">
+                            9 من 10 تطبيقات زراعية لا تدعم العربية. المزارع العربي يشعر أن المنتج "ليس له"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pain-card">
+                        <div class="pain-icon">🌡️</div>
+                        <h3 class="pain-title" data-ar="مناخ قاسٍ" data-en="Harsh Climate">مناخ قاسٍ</h3>
+                        <p class="pain-text" data-ar="50 درجة مئوية في الخليج. جداول الري المبرمجة للمناخ الغربي تفشل تماماً في صحرائنا" data-en="50°C in the Gulf. Watering schedules programmed for Western climate completely fail in our desert">
+                            50 درجة مئوية في الخليج. جداول الري المبرمجة للمناخ الغربي تفشل تماماً في صحرائنا
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pain-card">
+                        <div class="pain-icon">💸</div>
+                        <h3 class="pain-title" data-ar="أسعار غير عادلة" data-en="Unfair Pricing">أسعار غير عادلة</h3>
+                        <p class="pain-text" data-ar="40 دولار سنوياً = راتب أسبوع للمزارع المصري. تجارب مجانية خادعة تتحول لاشتراكات تلقائية" data-en="$40 annually = a week's salary for an Egyptian farmer. Deceptive free trials turn into automatic subscriptions">
+                            40 دولار سنوياً = راتب أسبوع للمزارع المصري. تجارب مجانية خادعة تتحول لاشتراكات تلقائية
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pain-card">
+                        <div class="pain-icon">🏜️</div>
+                        <h3 class="pain-title" data-ar="نباتات غائبة" data-en="Missing Plants">نباتات غائبة</h3>
+                        <p class="pain-text" data-ar="النخيل، النباتات الصحراوية، الأعشاب العربية - غائبة تماماً من قواعد البيانات الغربية" data-en="Palm trees, desert plants, Arabic herbs - completely absent from Western databases">
+                            النخيل، النباتات الصحراوية، الأعشاب العربية - غائبة تماماً من قواعد البيانات الغربية
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pain-card">
+                        <div class="pain-icon">❄️</div>
+                        <h3 class="pain-title" data-ar="تقنية باردة" data-en="Cold Technology">تقنية باردة</h3>
+                        <p class="pain-text" data-ar="معلومات جافة بلا دعم عاطفي. عندما تموت نبتتك، لا أحد يقول: 'عادي، هنساعدك تبدأ من جديد'" data-en="Dry information without emotional support. When your plant dies, no one says: 'It's okay, we'll help you start again'">
+                            معلومات جافة بلا دعم عاطفي. عندما تموت نبتتك، لا أحد يقول: "عادي، هنساعدك تبدأ من جديد"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pain-card">
+                        <div class="pain-icon">📡</div>
+                        <h3 class="pain-title" data-ar="اتصال دائم مطلوب" data-en="Always Online">اتصال دائم مطلوب</h3>
+                        <p class="pain-text" data-ar="في المزرعة، في الصحراء، في البلكونة - كل التطبيقات تحتاج إنترنت دائم. وإلا؟ لا شيء يعمل" data-en="On the farm, in the desert, on the balcony - all apps need constant internet. Otherwise? Nothing works">
+                            في المزرعة، في الصحراء، في البلكونة - كل التطبيقات تحتاج إنترنت دائم. وإلا؟ لا شيء يعمل
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="الحل الذي صممناه لك" data-en="The Solution We Designed for You">
+                    الحل الذي صممناه لك
+                </h2>
+                <p class="section-subtitle" data-ar="من مزارع عربي، لكل مزارع عربي" data-en="From an Arab farmer, to every Arab farmer">
+                    من مزارع عربي، لكل مزارع عربي
+                </p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="solution-visual">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="app-interface">
+                                    <div class="app-header">🌱 راشد</div>
+                                    <div class="app-message">نباتك عطشان، اسقيه الآن</div>
+                                    <div class="app-plant">🪴</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="solution-features">
+                        <div class="feature-item" data-aos="fade-left" data-aos-delay="100">
+                            <div class="feature-number">01</div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" data-ar="عربي 100%" data-en="100% Arabic">عربي 100%</h3>
+                                <p class="feature-text" data-ar="فصحى ولهجات محلية. 'بلكونة' لا 'balcony'. 'نبتة' لا 'plant'. نتحدث لغتك الحقيقية." data-en="Standard and local dialects. 'Balkona' not 'balcony'. 'Nabta' not 'plant'. We speak your real language.">
+                                    فصحى ولهجات محلية. "بلكونة" لا "balcony". "نبتة" لا "plant". نتحدث لغتك الحقيقية.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item" data-aos="fade-left" data-aos-delay="200">
+                            <div class="feature-number">02</div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" data-ar="مناخك، تربتك" data-en="Your Climate, Your Soil">مناخك، تربتك</h3>
+                                <p class="feature-text" data-ar="خوارزميات مبرمجة لـ 50 درجة مئوية. حاسبة ري توفر 70% من الماء. تقويم زراعي بالهجري والميلادي." data-en="Algorithms programmed for 50°C. Water calculator saves 70% water. Agricultural calendar in Hijri and Gregorian.">
+                                    خوارزميات مبرمجة لـ 50 درجة مئوية. حاسبة ري توفر 70% من الماء. تقويم زراعي بالهجري والميلادي.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item" data-aos="fade-left" data-aos-delay="300">
+                            <div class="feature-number">03</div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" data-ar="نجاح مضمون" data-en="Guaranteed Success">نجاح مضمون</h3>
+                                <p class="feature-text" data-ar="برنامج 'أول نبتة': دليل خطوة بخطوة. راشد المساعد الافتراضي يجيب بصبر. حتى لو ما عمرك زرعت، هتنجح." data-en="'First Plant' program: step-by-step guide. Rashid the virtual assistant answers patiently. Even if you've never planted, you'll succeed.">
+                                    برنامج "أول نبتة": دليل خطوة بخطوة. راشد المساعد الافتراضي يجيب بصبر. حتى لو ما عمرك زرعت، هتنجح.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
+                            <div class="feature-number">04</div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" data-ar="عائلتك الزراعية" data-en="Your Farming Family">عائلتك الزراعية</h3>
+                                <p class="feature-text" data-ar="مجتمع عربي نشط. قصص نجاح حقيقية. دعم عاطفي عند الإحباط. مش لوحدك أبداً." data-en="Active Arab community. Real success stories. Emotional support during frustration. Never alone.">
+                                    مجتمع عربي نشط. قصص نجاح حقيقية. دعم عاطفي عند الإحباط. مش لوحدك أبداً.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item" data-aos="fade-left" data-aos-delay="500">
+                            <div class="feature-number">05</div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" data-ar="يعمل بدون إنترنت" data-en="Works Offline">يعمل بدون إنترنت</h3>
+                                <p class="feature-text" data-ar="1000+ نبات محفوظ في جهازك. في الصحراء، في المزرعة، في أي مكان - كل معلوماتك معك." data-en="1000+ plants saved on your device. In the desert, on the farm, anywhere - all your information with you.">
+                                    1000+ نبات محفوظ في جهازك. في الصحراء، في المزرعة، في أي مكان - كل معلوماتك معك.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item" data-aos="fade-left" data-aos-delay="600">
+                            <div class="feature-number">06</div>
+                            <div class="feature-content">
+                                <h3 class="feature-title" data-ar="شفافية كاملة" data-en="Complete Transparency">شفافية كاملة</h3>
+                                <p class="feature-text" data-ar="لا تحويل تلقائي. إلغاء بضغطة زر. لا رسوم مخفية. نحترمك ونحترم نقودك." data-en="No automatic conversion. Cancel with one click. No hidden fees. We respect you and your money.">
+                                    لا تحويل تلقائي. إلغاء بضغطة زر. لا رسوم مخفية. نحترمك ونحترم نقودك.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="كل ما تحتاجه لنجاح زراعي" data-en="Everything You Need for Agricultural Success">
+                    كل ما تحتاجه لنجاح زراعي
+                </h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">📸</div>
+                        <h3 class="feature-card-title" data-ar="تعريف ذكي" data-en="Smart Identification">تعريف ذكي</h3>
+                        <p class="feature-card-text" data-ar="صور نباتك، نعرفه فوراً. 1000+ نوع عربي ومحلي" data-en="Photo your plant, we identify it instantly. 1000+ Arabic and local species">
+                            صور نباتك، نعرفه فوراً. 1000+ نوع عربي ومحلي
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">🩺</div>
+                        <h3 class="feature-card-title" data-ar="تشخيص الأمراض" data-en="Disease Diagnosis">تشخيص الأمراض</h3>
+                        <p class="feature-card-text" data-ar="ورق أصفر؟ بقع؟ نشخص المشكلة ونعطيك الحل" data-en="Yellow leaves? Spots? We diagnose the problem and give you the solution">
+                            ورق أصفر؟ بقع؟ نشخص المشكلة ونعطيك الحل
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">💧</div>
+                        <h3 class="feature-card-title" data-ar="تذكيرات ذكية" data-en="Smart Reminders">تذكيرات ذكية</h3>
+                        <p class="feature-card-text" data-ar="نباتك عطشان؟ نذكرك بالضبط متى وكم تسقي" data-en="Your plant is thirsty? We remind you exactly when and how much to water">
+                            نباتك عطشان؟ نذكرك بالضبط متى وكم تسقي
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <h3 class="feature-card-title" data-ar="تقويم زراعي" data-en="Agricultural Calendar">تقويم زراعي</h3>
+                        <p class="feature-card-text" data-ar="متى تزرع الطماطم في الرياض؟ نخبرك بالهجري والميلادي" data-en="When to plant tomatoes in Riyadh? We tell you in Hijri and Gregorian">
+                            متى تزرع الطماطم في الرياض؟ نخبرك بالهجري والميلادي
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌡️</div>
+                        <h3 class="feature-card-title" data-ar="مقياس الضوء" data-en="Light Meter">مقياس الضوء</h3>
+                        <p class="feature-card-text" data-ar="نباتك يحتاج شمس أكثر؟ نقيس الضوء ونخبرك" data-en="Your plant needs more sun? We measure the light and tell you">
+                            نباتك يحتاج شمس أكثر؟ نقيس الضوء ونخبرك
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3 class="feature-card-title" data-ar="مكتبة معرفية" data-en="Knowledge Library">مكتبة معرفية</h3>
+                        <p class="feature-card-text" data-ar="فيديوهات عربية، مقالات، نصائح من خبراء محليين" data-en="Arabic videos, articles, tips from local experts">
+                            فيديوهات عربية، مقالات، نصائح من خبراء محليين
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3 class="feature-card-title" data-ar="رحلة المزارع" data-en="Farmer's Journey">رحلة المزارع</h3>
+                        <p class="feature-card-text" data-ar="شارات، مستويات، تحديات - الزراعة بتصير لعبة ممتعة" data-en="Badges, levels, challenges - farming becomes a fun game">
+                            شارات، مستويات، تحديات - الزراعة بتصير لعبة ممتعة
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3 class="feature-card-title" data-ar="مجتمع نشط" data-en="Active Community">مجتمع نشط</h3>
+                        <p class="feature-card-text" data-ar="شارك حصادك، اسأل الخبراء، احتفل مع العائلة" data-en="Share your harvest, ask experts, celebrate with family">
+                            شارك حصادك، اسأل الخبراء، احتفل مع العائلة
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="قصص نجاح حقيقية" data-en="Real Success Stories">
+                    قصص نجاح حقيقية
+                </h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text" data-ar="الله! أول حصاد طماطم من البلكونة! التطبيق كان معايا خطوة بخطوة، والمساعد راشد صبور جداً. وفرت 200 جنيه الشهر ده." data-en="God! First tomato harvest from the balcony! The app was with me step by step, and Rashid the assistant is very patient. I saved 200 pounds this month.">
+                            "الله! أول حصاد طماطم من البلكونة! التطبيق كان معايا خطوة بخطوة، والمساعد راشد صبور جداً. وفرت 200 جنيه الشهر ده."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <div class="author-name" data-ar="فاطمة أحمد" data-en="Fatima Ahmed">فاطمة أحمد</div>
+                                <div class="author-location" data-ar="القاهرة، مصر" data-en="Cairo, Egypt">القاهرة، مصر</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text" data-ar="كنت أقتل حتى الصبار! الآن عندي حديقة كاملة في البلكونة. السر؟ التطبيق يفهم مناخ الرياض والحرارة الشديدة. شكراً من القلب." data-en="I used to kill even cactus! Now I have a complete garden on the balcony. The secret? The app understands Riyadh's climate and extreme heat. Thanks from the heart.">
+                            "كنت أقتل حتى الصبار! الآن عندي حديقة كاملة في البلكونة. السر؟ التطبيق يفهم مناخ الرياض والحرارة الشديدة. شكراً من القلب."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨</div>
+                            <div class="author-info">
+                                <div class="author-name" data-ar="خالد العتيبي" data-en="Khaled Al-Otaibi">خالد العتيبي</div>
+                                <div class="author-location" data-ar="الرياض، السعودية" data-en="Riyadh, Saudi Arabia">الرياض، السعودية</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text" data-ar="أخيراً تطبيق بالعربي يفهمني! النباتات الإماراتية موجودة، والنصائح للصيف الحار دقيقة. أطفالي الآن يساعدوني في الزراعة." data-en="Finally an app in Arabic that understands me! Emirati plants are there, and the advice for hot summer is accurate. My children now help me with farming.">
+                            "أخيراً تطبيق بالعربي يفهمني! النباتات الإماراتية موجودة، والنصائح للصيف الحار دقيقة. أطفالي الآن يساعدوني في الزراعة."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <div class="author-name" data-ar="مريم الشامسي" data-en="Maryam Al Shamsi">مريم الشامسي</div>
+                                <div class="author-location" data-ar="دبي، الإمارات" data-en="Dubai, UAE">دبي، الإمارات</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-ar="أسعار عادلة وشفافة" data-en="Fair and Transparent Pricing">
+                    أسعار عادلة وشفافة
+                </h2>
+                <p class="section-subtitle" data-ar="زراعة للجميع، لا للأغنياء فقط" data-en="Farming for everyone, not just the rich">
+                    زراعة للجميع، لا للأغنياء فقط
+                </p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card">
+                        <div class="pricing-badge" data-ar="مجاني للأبد" data-en="Free Forever">مجاني للأبد</div>
+                        <h3 class="pricing-title" data-ar="باقة البداية" data-en="Starter Package">باقة البداية</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency" data-ar="مجاني" data-en="Free">مجاني</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li data-ar="تعريف 10 نباتات شهرياً" data-en="Identify 10 plants monthly">✓ تعريف 10 نباتات شهرياً</li>
+                            <li data-ar="معلومات رعاية أساسية" data-en="Basic care information">✓ معلومات رعاية أساسية</li>
+                            <li data-ar="تذكيرات ري" data-en="Watering reminders">✓ تذكيرات ري</li>
+                            <li data-ar="الوصول للمجتمع" data-en="Community access">✓ الوصول للمجتمع</li>
+                            <li data-ar="برنامج أول نبتة" data-en="First plant program">✓ برنامج "أول نبتة"</li>
+                        </ul>
+                        <a href="#download" class="btn btn-outline w-100" data-ar="ابدأ مجاناً" data-en="Start Free">
+                            ابدأ مجاناً
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge popular" data-ar="الأكثر شعبية" data-en="Most Popular">الأكثر شعبية</div>
+                        <h3 class="pricing-title" data-ar="باقة المزارع" data-en="Farmer Package">باقة المزارع</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">99</span>
+                            <span class="price-currency" data-ar="ريال/سنة" data-en="SAR/year">ريال/سنة</span>
+                            <div class="price-note" data-ar="أو 250 جنيه مصري" data-en="or 250 EGP">250 جنيه مصري</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li data-ar="تعريف غير محدود" data-en="Unlimited identification">✓ تعريف غير محدود</li>
+                            <li data-ar="تشخيص أمراض بالذكاء الاصطناعي" data-en="AI disease diagnosis">✓ تشخيص أمراض بالذكاء الاصطناعي</li>
+                            <li data-ar="نصائح شخصية حسب موقعك" data-en="Personalized advice by location">✓ نصائح شخصية حسب موقعك</li>
+                            <li data-ar="تقويم زراعي كامل" data-en="Complete agricultural calendar">✓ تقويم زراعي كامل</li>
+                            <li data-ar="وضع offline كامل" data-en="Full offline mode">✓ وضع offline كامل</li>
+                            <li data-ar="استشارة مهندس زراعي شهرياً" data-en="Monthly agricultural engineer consultation">✓ استشارة مهندس زراعي شهرياً</li>
+                            <li data-ar="دعم أولوية" data-en="Priority support">✓ دعم أولوية</li>
+                        </ul>
+                        <a href="#download" class="btn btn-primary w-100" data-ar="اشترك الآن" data-en="Subscribe Now">
+                            اشترك الآن
+                        </a>
+                        <div class="pricing-guarantee" data-ar="ضمان استرجاع خلال 60 يوم" data-en="60-day money-back guarantee">
+                            ✓ ضمان استرجاع خلال 60 يوم
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card">
+                        <div class="pricing-badge" data-ar="للطلبة وربات البيوت" data-en="For Students & Homemakers">خصم خاص</div>
+                        <h3 class="pricing-title" data-ar="باقة المجتمع" data-en="Community Package">باقة المجتمع</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">49</span>
+                            <span class="price-currency" data-ar="ريال/سنة" data-en="SAR/year">ريال/سنة</span>
+                            <div class="price-note" data-ar="أو 120 جنيه مصري" data-en="or 120 EGP">120 جنيه مصري</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li data-ar="كل مميزات باقة المزارع" data-en="All Farmer package features">✓ كل مميزات باقة المزارع</li>
+                            <li data-ar="خصم 50% للطلبة" data-en="50% discount for students">✓ خصم 50% للطلبة</li>
+                            <li data-ar="خصم 50% لربات البيوت" data-en="50% discount for homemakers">✓ خصم 50% لربات البيوت</li>
+                            <li class="text-muted" data-ar="يتطلب إثبات الحالة" data-en="Requires proof of status">(يتطلب إثبات الحالة)</li>
+                        </ul>
+                        <a href="#download" class="btn btn-outline w-100" data-ar="تقدم بطلب" data-en="Apply Now">
+                            تقدم بطلب
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-comparison" data-aos="fade-up">
+                <h3 class="comparison-title" data-ar="لماذا نحن أفضل؟" data-en="Why Are We Better?">لماذا نحن أفضل؟</h3>
+                <div class="comparison-table">
+                    <div class="comparison-row">
+                        <div class="comparison-feature" data-ar="دعم عربي 100%" data-en="100% Arabic support">دعم عربي 100%</div>
+                        <div class="comparison-us">✓ نحن</div>
+                        <div class="comparison-them">✗ المنافسون</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-feature" data-ar="مصمم للمناخ العربي" data-en="Designed for Arab climate">مصمم للمناخ العربي</div>
+                        <div class="comparison-us">✓ نحن</div>
+                        <div class="comparison-them">✗ المنافسون</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-feature" data-ar="أسعار عادلة" data-en="Fair pricing">أسعار عادلة</div>
+                        <div class="comparison-us">99 ريال</div>
+                        <div class="comparison-them">150 ريال</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-feature" data-ar="شفافية كاملة" data-en="Complete transparency">شفافية كاملة</div>
+                        <div class="comparison-us">✓ نحن</div>
+                        <div class="comparison-them">✗ المنافسون</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-feature" data-ar="وضع offline" data-en="Offline mode">وضع offline</div>
+                        <div class="comparison-us">✓ نحن</div>
+                        <div class="comparison-them">✗ المنافسون</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="download" class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title" data-ar="ابدأ رحلتك الزراعية اليوم" data-en="Start Your Farming Journey Today">
+                    ابدأ رحلتك الزراعية اليوم
+                </h2>
+                <p class="cta-subtitle" data-ar="من بذرة واحدة إلى حديقة كاملة. نحن معك في كل خطوة." data-en="From one seed to a complete garden. We're with you every step.">
+                    من بذرة واحدة إلى حديقة كاملة. نحن معك في كل خطوة.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="store-button">
+                        <div class="store-icon">🍎</div>
+                        <div class="store-text">
+                            <div class="store-label" data-ar="حمّل من" data-en="Download on">حمّل من</div>
+                            <div class="store-name">App Store</div>
+                        </div>
+                    </a>
+                    <a href="#" class="store-button">
+                        <div class="store-icon">🤖</div>
+                        <div class="store-text">
+                            <div class="store-label" data-ar="احصل عليه من" data-en="Get it on">احصل عليه من</div>
+                            <div class="store-name">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cta-guarantee" data-ar="مجاني للتجربة • لا بطاقة ائتمان مطلوبة • إلغاء في أي وقت" data-en="Free to try • No credit card required • Cancel anytime">
+                    مجاني للتجربة • لا بطاقة ائتمان مطلوبة • إلغاء في أي وقت
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="footer-brand" data-ar="زراعة" data-en="Zara'a">زراعة</h3>
+                    <p class="footer-tagline" data-ar="من مزارع عربي، لكل مزارع عربي" data-en="From an Arab farmer, to every Arab farmer">
+                        من مزارع عربي، لكل مزارع عربي
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title" data-ar="المنتج" data-en="Product">المنتج</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features" data-ar="المميزات" data-en="Features">المميزات</a></li>
+                        <li><a href="#pricing" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+                        <li><a href="#" data-ar="التحديثات" data-en="Updates">التحديثات</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title" data-ar="الدعم" data-en="Support">الدعم</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-ar="مركز المساعدة" data-en="Help Center">مركز المساعدة</a></li>
+                        <li><a href="#" data-ar="المجتمع" data-en="Community">المجتمع</a></li>
+                        <li><a href="#" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title" data-ar="الشركة" data-en="Company">الشركة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-ar="عنّا" data-en="About">عنّا</a></li>
+                        <li><a href="#" data-ar="المدونة" data-en="Blog">المدونة</a></li>
+                        <li><a href="#" data-ar="وظائف" data-en="Careers">وظائف</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4 class="footer-title" data-ar="قانوني" data-en="Legal">قانوني</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-ar="الخصوصية" data-en="Privacy">الخصوصية</a></li>
+                        <li><a href="#" data-ar="الشروط" data-en="Terms">الشروط</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-ar="© 2026 زراعة. كل الحقوق محفوظة. صنع بحب في الوطن العربي 💚" data-en="© 2026 Zara'a. All rights reserved. Made with love in the Arab world 💚">
+                    © 2026 زراعة. كل الحقوق محفوظة. صنع بحب في الوطن العربي 💚
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
